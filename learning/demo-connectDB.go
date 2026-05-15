@@ -24,7 +24,7 @@ func query(db *sql.DB) {
 
 func main() {
 	// Connect to the database
-	db, err := sql.Open("mysql", "root:Admin@2026@tcp(127.0.0.1:3306)/gamesdb")
+	db, err := sql.Open("mysql", "root:your_password@tcp(127.0.0.1:3306)/gamesdb")
 	if err != nil {
 		panic(err)
 	} else {
